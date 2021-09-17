@@ -8,7 +8,7 @@ BEGIN
     select a.valor_compra + ((a.valor_compra*a.percentual_lucro) / 100)
       into valor_venda
       from produto a
-     where id_produto = in_id_produto
+     where a.id_produto = in_id_produto
     ;
 
     RETURN valor_venda;
