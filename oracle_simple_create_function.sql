@@ -1,5 +1,5 @@
-CREATE OR REPLACE FUNCTION get_valor_venda(
-    in_id_produto PLS_INTEGER
+CREATE OR REPLACE FUNCTION fn_get_valor_venda(
+    in_id_produto NUMBER
 ) 
 RETURN NUMBER
 IS
